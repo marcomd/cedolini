@@ -1,0 +1,26 @@
+name: "Commercio e Terziario"
+aliases: ["Commercio e terziario Confcom"]
+detect_patterns: ["Commercio e terziario", "Confcommercio"]
+
+contributions:
+  IVS:
+    rate: "0.0919"
+    tolerance: "0.02"
+  CIGS:
+    rate: "0.003"
+    tolerance: "0.02"
+  FIS:
+    rate: "0.0026667"
+    tolerance: "0.02"
+  EST:
+    type: fixed
+    amount: "2.00"
+    tolerance: "0.01"
+  FONTE_BASE:
+    rate: "0.0055"
+    use_own_imponibile: true
+    tolerance: "0.02"
+  FONTE_VOL:
+    rate: "0.0045"
+    use_own_imponibile: true
+    tolerance: "0.02"

@@ -1,0 +1,19 @@
+# Dati personali
+input/
+output/
+logs/
+
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Claude Code (impostazioni locali)
+.claude
+
+.tool-versions
+
+CLAUDE.md

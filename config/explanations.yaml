@@ -1,0 +1,168 @@
+# Testi e configurazione per il layer esplicativo dei report VerificaCedolino.
+# Tutti i testi sono in italiano semplice, separati dal codice Python.
+
+disclaimer: |
+  Questo report verifica la coerenza interna dei calcoli della busta paga.
+  NON costituisce una verifica legale o fiscale. Per questioni specifiche,
+  rivolgersi al proprio consulente del lavoro.
+
+intro: |
+  **Competenze** = voci positive (stipendio, straordinari, permessi retribuiti, ecc.)
+  **Trattenute** = voci negative (contributi INPS, IRPEF, addizionali, ecc.)
+  **Netto in busta** = competenze - trattenute + arrotondamento
+
+  Ogni controllo puo' avere tre esiti:
+  - **PASS**: il calcolo e' coerente con i dati del cedolino
+  - **WARNING**: differenza minore o stima approssimata, non necessariamente un errore
+  - **FAIL**: discrepanza significativa da approfondire
+
+sections:
+  riepilogo: ""
+  inps: |
+    I contributi INPS finanziano pensione e prestazioni sociali. Sono calcolati
+    come percentuale dell'imponibile contributivo. Qui vedi la quota a tuo carico.
+  irpef: |
+    L'IRPEF e' calcolata per scaglioni sull'imponibile fiscale
+    (lordo - contributi INPS - deduzioni). La detrazione riduce l'imposta dovuta.
+  tfr: |
+    Il TFR (Trattamento di Fine Rapporto) e' circa 1/13,5 della retribuzione annua,
+    accantonato ogni mese. Puo' essere lasciato in azienda o versato a un fondo pensione.
+  ratei: |
+    Ferie, permessi e mensilita' aggiuntive maturano progressivamente durante l'anno.
+    Il saldo = residuo anno precedente + maturato - goduto.
+  anomalie: |
+    Non tutte le anomalie indicano errori. WARNING = differenza minore o stima
+    approssimata. FAIL = discrepanza significativa da verificare con il datore di lavoro.
+
+# Pattern per categorizzare le voci del cedolino.
+# Ogni categoria ha una lista di pattern regex (case-insensitive) e una label descrittiva.
+voce_categories:
+  retribuzione_base:
+    patterns:
+      - "retribuz.*base"
+      - "retrib.*ordinaria"
+      - "paga base"
+    label: "Stipendio base"
+  superminimo:
+    patterns:
+      - "superminimo"
+      - "ass.*personam"
+    label: "Superminimo/assegno"
+  contingenza:
+    patterns:
+      - "contingenza"
+    label: "Indennita' di contingenza"
+  scatti:
+    patterns:
+      - "scatt.*anzianit"
+    label: "Scatti di anzianita'"
+  straordinario:
+    patterns:
+      - "straord"
+    label: "Lavoro straordinario"
+  ferie:
+    patterns:
+      - "ferie"
+    label: "Ferie"
+  permessi:
+    patterns:
+      - "permess"
+      - "\\brol\\b"
+      - "ex.*f[es]"
+    label: "Permessi retribuiti"
+  mensilita_aggiuntiva:
+    patterns:
+      - "13.*mensil"
+      - "14.*mensil"
+      - "tredicesima"
+      - "quattordicesima"
+    label: "Mensilita' aggiuntiva"
+  mensa:
+    patterns:
+      - "mensa"
+      - "buono.*pasto"
+      - "ticket"
+      - "val.*conv.*mensa"
+    label: "Indennita' mensa"
+  festivita:
+    patterns:
+      - "fest.*patron"
+      - "festivit"
+    label: "Festivita'"
+  malattia:
+    patterns:
+      - "malattia"
+    label: "Malattia"
+  sindacale:
+    patterns:
+      - "sindacal"
+    label: "Trattenuta sindacale"
+  arrotondamento:
+    patterns:
+      - "arrot"
+    label: "Arrotondamento"
+  indennita_vacanza:
+    patterns:
+      - "ind.*vacanza"
+    label: "Indennita' vacanza contrattuale"
+  totale_retribuzione:
+    patterns:
+      - "totale.*retribuz"
+    label: "Totale retribuzione"
+  donazione_sangue:
+    patterns:
+      - "don.*sangue"
+    label: "Donazione sangue"
+  polizza_auto:
+    patterns:
+      - "polizza.*auto"
+      - "tratt.*auto"
+    label: "Trattenuta veicolo aziendale"
+  recupero:
+    patterns:
+      - "recupero"
+    label: "Recupero"
+  altro:
+    patterns: []
+    label: "Altro"
+
+# Glossario dei termini. Solo quelli effettivamente presenti nel report verranno mostrati.
+glossary:
+  Imponibile contributivo: "L'importo su cui si calcolano i contributi INPS. E' il lordo meno eventuali voci escluse."
+  Imponibile fiscale: "L'importo su cui si calcola l'IRPEF: lordo - contributi INPS - deduzioni."
+  IVS: "Invalidita', Vecchiaia, Superstiti. Contributo principale per la pensione."
+  CIGS: "Cassa Integrazione Guadagni Straordinaria. Contributo per il fondo di integrazione salariale."
+  FIS: "Fondo di Integrazione Salariale. Finanzia le prestazioni in caso di sospensione/riduzione dell'orario."
+  EST: "Ente bilaterale per il Settore Terziario. Contributo fisso per servizi bilaterali."
+  FON.TE: "Fondo pensione complementare del commercio. Contributo volontario e/o contrattuale."
+  FDO_SOLID: "Fondo di Solidarieta'. Contributo per la bilateralita' nel settore assicurativo."
+  TFR: "Trattamento di Fine Rapporto. Circa 1/13,5 della retribuzione annua, accantonato ogni mese."
+  Detrazioni: "Riduzioni dell'IRPEF previste dalla legge (es. detrazione lavoro dipendente). Riducono l'imposta, non il reddito."
+  Scaglioni IRPEF: "L'IRPEF si calcola a fasce progressive: fino a 28.000 EUR al 23%, da 28.001 a 50.000 EUR al 35%, oltre 50.000 EUR al 43% (aliquote 2024-2026)."
+  Conguaglio: "Ricalcolo a fine anno della differenza tra le ritenute gia' versate e l'imposta effettiva dovuta."
+  R.O.L.: "Riduzione Orario di Lavoro. Ore di permesso retribuito previste dal CCNL."
+  Addizionale regionale: "Imposta aggiuntiva all'IRPEF, stabilita dalla Regione di residenza."
+  Addizionale comunale: "Imposta aggiuntiva all'IRPEF, stabilita dal Comune di residenza. Puo' avere acconto e saldo."
+  Retribuzione utile TFR: "La retribuzione considerata per il calcolo del TFR (puo' includere voci diverse dalla retribuzione base)."
+  Previdenza complementare: "Versamento a un fondo pensione integrativo, in aggiunta alla pensione INPS."
+
+# Note esplicative per tipo di risultato di validazione.
+# La chiave e' un pattern che viene cercato nel nome del risultato (case-insensitive).
+validation_notes:
+  "Netto in busta": "Verifica che competenze - trattenute + arrotondamento = netto stampato."
+  "Contributo IVS": "Verifica aliquota IVS (9,19%) applicata all'imponibile contributivo."
+  "Contributo CIGS": "Verifica contributo CIGS sull'imponibile contributivo."
+  "Contributo FIS": "Verifica contributo FIS sull'imponibile contributivo."
+  "Contributo EST": "Verifica contributo fisso EST (ente bilaterale terziario)."
+  "Contributo FON.TE": "Verifica contributo fondo pensione complementare FON.TE."
+  "Contributo FDO_SOLID": "Verifica contributo fondo di solidarieta'."
+  "Addizionale IVS": "Contributo aggiuntivo 1% sulla quota di imponibile eccedente la prima fascia."
+  "IRPEF lorda mensile": "Stima basata su proiezione lineare annua; differenze attese rispetto al calcolo cumulativo effettivo."
+  "IRPEF lorda annuale": "Verifica IRPEF annuale calcolata per scaglioni sull'imponibile fiscale."
+  "Quota TFR": "Verifica che la quota TFR mensile sia coerente con retribuzione_utile / 13,5."
+  "Contributo agg": "Contributo aggiuntivo TFR (0,50% della retribuzione utile)."
+  "TFR annuo": "Verifica che il progressivo TFR annuo corrisponda alla somma delle quote mensili."
+  "Calcolo saldo": "Verifica: residuo anno precedente + maturato - goduto = saldo."
+  "Residuo AP costante": "Il residuo dell'anno precedente deve restare invariato per tutto l'anno."
+  "Continuita maturazione": "Le ore/giorni maturati devono crescere progressivamente mese dopo mese."
+  "CUD": "Cross-check tra i totali annuali dei cedolini e i dati della Certificazione Unica."

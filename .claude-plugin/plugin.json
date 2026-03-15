@@ -1,0 +1,11 @@
+{
+  "name": "cedolini",
+  "description": "Valida cedolini italiani (buste paga) da PDF: estrae dati, valida calcoli (INPS, IRPEF, TFR, netto, ratei), cross-check CUD, genera report Markdown.",
+  "version": "0.5.0",
+  "author": {
+    "name": "Mark"
+  },
+  "repository": "https://github.com/marcomd/cedolini",
+  "license": "MIT",
+  "keywords": ["payroll", "cedolino", "busta-paga", "italian", "validation", "pdf"]
+}
