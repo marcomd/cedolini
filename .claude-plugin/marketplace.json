@@ -9,8 +9,8 @@
   },
   "plugins": [
     {
-      "name": "verifica-cedolini",
-      "source": "./plugins/verifica-cedolini",
+      "name": "cedolini",
+      "source": "./plugins/cedolini",
       "description": "Valida cedolini italiani (buste paga) da PDF: estrae dati, valida calcoli (INPS, IRPEF, TFR, netto, ratei), cross-check CUD, genera report Markdown."
     }
   ]
