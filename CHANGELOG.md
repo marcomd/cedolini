@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.6.0] - 2026-03-15
+
+### Added
+- Suite di regression test con pytest e snapshot golden CSV
+- Test a 3 livelli: strutturali, numerici (tolleranza 0.02), diff completo
+- Test parametrizzato di format detection su tutti i PDF di input
+- Script `update_snapshots.py` per rigenerare i golden file dopo modifiche intenzionali
+- Flag `--update-snapshots` in pytest per aggiornamento inline
+
 ## [0.5.0] - 2026-03-15
 
 ### Changed

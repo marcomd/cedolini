@@ -1,0 +1,190 @@
+anno,mese,formato,codice,descrizione,unita_misura,quantita,base,competenze,trattenute,flag_c,flag_i,flag_t,flag_n
+2007,1,adp_legacy,1000,RETRIBUZIONE BASE,,,,1639.07,,False,False,False,False
+2007,1,adp_legacy,1023,ASS.AD PERSONAM,,,,918.64,,False,False,False,False
+2007,1,adp_legacy,1060,IND.VACANZA CONTR.,,,,8.36,,False,False,False,False
+2007,1,adp_legacy,1100,TOTALE RETRIBUZ.,,,,2566.07,,False,False,False,False
+2007,1,adp_legacy,1213,RETRIBUZ.ORDINARIA,,29.00,85.5356,2480.53,,True,True,True,True
+2007,1,adp_legacy,3993,VAL.CONV.MENSA,,30.94,34.00,0.9100,,True,True,True,True
+2007,1,adp_legacy,4747,"ARR. IMPONIBILE -0,47",,,,-0.47,,False,False,False,True
+2007,2,adp_legacy,1000,RETRIBUZIONE BASE,,,,1639.07,,False,False,False,False
+2007,2,adp_legacy,1023,ASS.AD PERSONAM,,,,918.64,,False,False,False,False
+2007,2,adp_legacy,1060,IND.VACANZA CONTR.,,,,13.93,,False,False,False,False
+2007,2,adp_legacy,1100,TOTALE RETRIBUZ.,,,,2571.64,,False,False,False,False
+2007,2,adp_legacy,1213,RETRIBUZ.ORDINARIA,,30.00,85.7213,2571.64,,True,True,True,True
+2007,2,adp_legacy,3993,VAL.CONV.MENSA,,15.47,17.00,0.9100,,True,True,True,True
+2007,2,adp_legacy,4747,"ARR. IMPONIBILE -0,11",,,,-0.11,,False,False,False,True
+2007,3,adp_legacy,1000,RETRIBUZIONE BASE,,,,1639.07,,False,False,False,False
+2007,3,adp_legacy,1023,ASS.AD PERSONAM,,,,918.64,,False,False,False,False
+2007,3,adp_legacy,1060,IND.VACANZA CONTR.,,,,13.93,,False,False,False,False
+2007,3,adp_legacy,1100,TOTALE RETRIBUZ.,,,,2571.64,,False,False,False,False
+2007,3,adp_legacy,1213,RETRIBUZ.ORDINARIA,,30.00,85.7213,2571.64,,True,True,True,True
+2007,3,adp_legacy,3993,VAL.CONV.MENSA,,13.65,15.00,0.9100,,True,True,True,True
+2007,3,adp_legacy,4747,"ARR. IMPONIBILE -0,29",,,,-0.29,,False,False,False,True
+2007,4,adp_legacy,1000,RETRIBUZIONE BASE,,,,1639.07,,False,False,False,False
+2007,4,adp_legacy,1023,ASS.AD PERSONAM,,,,918.64,,False,False,False,False
+2007,4,adp_legacy,1060,IND.VACANZA CONTR.,,,,13.93,,False,False,False,False
+2007,4,adp_legacy,1100,TOTALE RETRIBUZ.,,,,2571.64,,False,False,False,False
+2007,4,adp_legacy,1213,RETRIBUZ.ORDINARIA,,30.00,85.7213,2571.64,,True,True,True,True
+2007,4,adp_legacy,3993,VAL.CONV.MENSA,,16.38,18.00,0.9100,,True,True,True,True
+2007,4,adp_legacy,4747,"ARR. IMPONIBILE -0,02",,,,-0.02,,False,False,False,True
+2007,5,adp_legacy,1000,RETRIBUZIONE BASE,,,,1639.07,,False,False,False,False
+2007,5,adp_legacy,1023,ASS.AD PERSONAM,,,,918.64,,False,False,False,False
+2007,5,adp_legacy,1060,IND.VACANZA CONTR.,,,,13.93,,False,False,False,False
+2007,5,adp_legacy,1100,TOTALE RETRIBUZ.,,,,2571.64,,False,False,False,False
+2007,5,adp_legacy,1213,RETRIBUZ.ORDINARIA,,30.00,85.7213,2571.64,,True,True,True,True
+2007,5,adp_legacy,3833,FERIE GODUTE,,3.00,3.00,1.0000,,False,False,False,False
+2007,5,adp_legacy,3993,VAL.CONV.MENSA,,10.92,12.00,0.9100,,True,True,True,True
+2007,5,adp_legacy,4747,ARR. IMPONIBILE,,,,0.44,,False,False,False,True
+2007,6,adp_legacy,1000,RETRIBUZIONE BASE,,,,1639.07,,False,False,False,False
+2007,6,adp_legacy,1023,ASS.AD PERSONAM,,,,918.64,,False,False,False,False
+2007,6,adp_legacy,1060,IND.VACANZA CONTR.,,,,13.93,,False,False,False,False
+2007,6,adp_legacy,1100,TOTALE RETRIBUZ.,,,,2571.64,,False,False,False,False
+2007,6,adp_legacy,1213,RETRIBUZ.ORDINARIA,,30.00,85.7213,2571.64,,True,True,True,True
+2007,6,adp_legacy,1733,14MA MENSILITA',,359.00,7.1434,2564.48,,True,True,True,True
+2007,6,adp_legacy,3993,VAL.CONV.MENSA,,14.56,16.00,0.9100,,True,True,True,True
+2007,6,adp_legacy,4747,ARR. IMPONIBILE,,,,0.32,,False,False,False,True
+2007,7,adp_legacy,1000,RETRIBUZIONE BASE,,,,1639.07,,False,False,False,False
+2007,7,adp_legacy,1023,ASS.AD PERSONAM,,,,918.64,,False,False,False,False
+2007,7,adp_legacy,1060,IND.VACANZA CONTR.,,,,13.93,,False,False,False,False
+2007,7,adp_legacy,1100,TOTALE RETRIBUZ.,,,,2571.64,,False,False,False,False
+2007,7,adp_legacy,1213,RETRIBUZ.ORDINARIA,,30.00,85.7213,2571.64,,True,True,True,True
+2007,7,adp_legacy,2201,SPESE NON DOCUMEN.,,,,20.00,,True,True,True,True
+2007,7,adp_legacy,3833,FERIE GODUTE,,4.50,4.50,1.0000,,False,False,False,False
+2007,7,adp_legacy,3993,VAL.CONV.MENSA,,8.19,9.00,0.9100,,True,True,True,True
+2007,7,adp_legacy,4747,ARR. IMPONIBILE,,,,0.17,,False,False,False,True
+2007,7,adp_legacy,7131,ARR TFR FPC IMP,,,,532.27,,False,False,False,False
+2007,8,adp_legacy,1000,RETRIBUZIONE BASE,,,,1639.07,,False,False,False,False
+2007,8,adp_legacy,1023,ASS.AD PERSONAM,,,,918.64,,False,False,False,False
+2007,8,adp_legacy,1060,IND.VACANZA CONTR.,,,,13.93,,False,False,False,False
+2007,8,adp_legacy,1100,TOTALE RETRIBUZ.,,,,2571.64,,False,False,False,False
+2007,8,adp_legacy,1213,RETRIBUZ.ORDINARIA,,30.00,85.7213,2571.64,,True,True,True,True
+2007,8,adp_legacy,1979,STRAORD. AL,,8.25,24.8665,205.15,,True,True,True,True
+2007,8,adp_legacy,3993,VAL.CONV.MENSA,,13.65,15.00,0.9100,,True,True,True,True
+2007,8,adp_legacy,4747,"ARR. IMPONIBILE -0,44",,,,-0.44,,False,False,False,True
+2007,9,adp_legacy,1000,RETRIBUZIONE BASE,,,,1639.07,,False,False,False,False
+2007,9,adp_legacy,1023,ASS.AD PERSONAM,,,,918.64,,False,False,False,False
+2007,9,adp_legacy,1060,IND.VACANZA CONTR.,,,,13.93,,False,False,False,False
+2007,9,adp_legacy,1100,TOTALE RETRIBUZ.,,,,2571.64,,False,False,False,False
+2007,9,adp_legacy,1213,RETRIBUZ.ORDINARIA,,30.00,85.7213,2571.64,,True,True,True,True
+2007,9,adp_legacy,1740,P.A.P,,,,2192.00,,True,True,True,True
+2007,9,adp_legacy,1979,STRAORD. AL,,8.50,24.8665,211.37,,True,True,True,True
+2007,9,adp_legacy,3833,FERIE GODUTE,,6.50,6.50,1.0000,,False,False,False,False
+2007,9,adp_legacy,3993,VAL.CONV.MENSA,,13.65,15.00,0.9100,,True,True,True,True
+2007,9,adp_legacy,4101,POLIZZA TCM DIP.,,,,18.35,,False,False,False,False
+2007,9,adp_legacy,4132,POLIZZA SANIT DIP,,,,195.00,,False,False,False,False
+2007,9,adp_legacy,4747,ARR. IMPONIBILE,,,,0.34,,False,False,False,True
+2007,10,adp_legacy,1000,RETRIBUZIONE BASE,,,,1747.88,,False,False,False,False
+2007,10,adp_legacy,1023,ASS.AD PERSONAM,,,,918.64,,False,False,False,False
+2007,10,adp_legacy,1100,TOTALE RETRIBUZ.,,,,2666.52,,False,False,False,False
+2007,10,adp_legacy,1213,RETRIBUZ.ORDINARIA,,30.00,88.8840,2666.52,,True,True,True,True
+2007,10,adp_legacy,1979,STRAORD. AL,,16.50,24.8665,410.30,,True,True,True,True
+2007,10,adp_legacy,2421,ARRETRATI CCNL AC,,,,770.88,,True,True,True,True
+2007,10,adp_legacy,2423,UNA TANTUM CCNL,,,,178.00,,True,True,True,True
+2007,10,adp_legacy,3993,VAL.CONV.MENSA,,14.00,,5.2900,,True,True,True,True
+2007,10,adp_legacy,4747,ARR. IMPONIBILE,,,,0.30,,False,False,False,True
+2007,11,adp_legacy,1000,RETRIBUZIONE BASE,,,,1747.88,,False,False,False,False
+2007,11,adp_legacy,1023,ASS.AD PERSONAM,,,,918.64,,False,False,False,False
+2007,11,adp_legacy,1100,TOTALE RETRIBUZ.,,,,2666.52,,False,False,False,False
+2007,11,adp_legacy,1213,RETRIBUZ.ORDINARIA,,30.00,88.8840,2666.52,,True,True,True,True
+2007,11,adp_legacy,1979,STRAORD. AL,,11.75,25.7312,302.34,,True,True,True,True
+2007,11,adp_legacy,3833,FERIE GODUTE,,1.00,1.00,1.0000,,False,False,False,False
+2007,11,adp_legacy,3993,VAL.CONV.MENSA,,10.92,12.00,0.9100,,True,True,True,True
+2007,11,adp_legacy,4747,ARR. IMPONIBILE,,,,0.22,,False,False,False,True
+2007,12,adp_legacy,1000,RETRIBUZIONE BASE,,,,1747.88,,False,False,False,False
+2007,12,adp_legacy,1023,ASS.AD PERSONAM,,,,918.64,,False,False,False,False
+2007,12,adp_legacy,1100,TOTALE RETRIBUZ.,,,,2666.52,,False,False,False,False
+2007,12,adp_legacy,1213,RETRIBUZ.ORDINARIA,,30.00,88.8840,2666.52,,True,True,True,True
+2007,12,adp_legacy,1723,13MA MENSILITA',,359.00,7.4070,2659.11,,True,True,True,True
+2007,12,adp_legacy,1979,STRAORD. AL,,6.75,25.7312,173.69,,True,True,True,True
+2007,12,adp_legacy,3993,VAL.CONV.MENSA,,16.38,18.00,0.9100,,True,True,True,True
+2007,12,adp_legacy,4747,ARR. IMPONIBILE,,,,0.30,,False,False,False,True
+2007,12,adp_legacy,8446,TRATT.SINDACALE,,,,,34.96,False,False,False,False
+2007,13,adp_legacy,1000,RETRIBUZIONE BASE,,,,1747.88,,False,False,False,False
+2007,13,adp_legacy,1023,ASS.AD PERSONAM,,,,918.64,,False,False,False,False
+2007,13,adp_legacy,1100,TOTALE RETRIBUZ.,,,,2666.52,,False,False,False,False
+2007,13,adp_legacy,9603,IMPORTO MENS.SUPPL,,359.00,7.4070,2659.11,,False,False,False,False
+2007,14,adp_legacy,1000,RETRIBUZIONE BASE,,,,1639.07,,False,False,False,False
+2007,14,adp_legacy,1023,ASS.AD PERSONAM,,,,918.64,,False,False,False,False
+2007,14,adp_legacy,1060,IND.VACANZA CONTR.,,,,13.93,,False,False,False,False
+2007,14,adp_legacy,1100,TOTALE RETRIBUZ.,,,,2571.64,,False,False,False,False
+2007,14,adp_legacy,9603,IMPORTO MENS.SUPPL,,359.00,7.1434,2564.48,,False,False,False,False
+2007,14,adp_legacy,9858,ARROT.ACCONTO M.S.,,,,0.25,,False,False,False,False
+2016,1,hornet,AA245,Retrib. ordinaria,,30.000,118.70267,3561.08,,True,True,False,False
+2016,1,hornet,001979,Straord. al,,10.750,31.87352,342.64,,True,True,False,False
+2016,1,hornet,003833,Ferie godute,,,,4.000,,True,True,False,False
+2016,1,hornet,PIDS10,Donazione sangue INPS,,1.000,,116.57,,True,False,False,False
+2016,1,hornet,PXR121,Assenza per don.sangue,,1.000,,116.57,,True,True,False,False
+2016,1,hornet,003993,Val.conv.mensa,,15.000,1.71000,25.65,,True,True,False,False
+2016,1,hornet,008563,Tratt. polizza auto,,,,,31.25,False,False,False,False
+2016,1,hornet,008564,Tratt.auto,,,,,41.38,False,False,False,False
+2016,1,hornet,008446,Tratt. Sindacale CISL,,,,,12.38,False,False,False,False
+2016,1,hornet,TNARR,Arrot. prec.,,,,0.01,,False,False,False,False
+2016,1,hornet,F94,F.do pens. imp. -c/AZI,,31545.36000,5.25,1656.13,,False,False,False,False
+2016,1,hornet,Z7139,Quota TFR Fondo Mese,,,,367.39,,False,False,False,False
+2016,2,hornet,AA245,Retrib. ordinaria,,30.000,118.70267,3561.08,,True,True,False,False
+2016,2,hornet,003833,Ferie godute,,,,1.000,,True,True,False,False
+2016,2,hornet,003993,Val.conv.mensa,,19.000,1.71000,32.49,,True,True,False,False
+2016,2,hornet,008563,Tratt. polizza auto,,,,,28.66,False,False,False,False
+2016,2,hornet,008564,Tratt.auto,,,,,41.38,False,False,False,False
+2016,2,hornet,008446,Tratt. Sindacale CISL,,,,,12.38,False,False,False,False
+2016,2,hornet,Z7139,Quota TFR Fondo Mese,,,,245.81,,False,False,False,False
+2016,2,hornet,WSG201,SG.Inps Pr.Az.preg.AP,,698.00000,,174.50,,False,False,False,False
+2016,2,hornet,WSG202,SG.Inps Pr.Az.preg.AP,,698.00000,,64.15,,False,False,False,False
+2016,3,hornet,AA245,Retrib. ordinaria,,30.000,118.70267,3561.08,,True,True,False,False
+2016,3,hornet,003993,Val.conv.mensa,,19.000,1.71000,32.49,,True,True,False,False
+2016,3,hornet,008563,Tratt. polizza auto,,,,,28.66,False,False,False,False
+2016,3,hornet,008564,Tratt.auto,,,,,41.38,False,False,False,False
+2016,3,hornet,008446,Tratt. Sindacale CISL,,,,,12.38,False,False,False,False
+2016,3,hornet,Z7139,Quota TFR Fondo Mese,,,,245.82,,False,False,False,False
+2017,1,hornet,AA245,Retrib. ordinaria,,30.000,118.70267,3561.08,,True,True,False,False
+2017,1,hornet,001979,Straord. al,,2.250,32.45776,73.03,,True,True,False,False
+2017,1,hornet,003833,Ferie godute,,,,4.000,,False,False,False,False
+2017,1,hornet,003993,Val.conv.mensa,,13.000,1.71000,22.23,,True,True,False,False
+2017,1,hornet,008563,Tratt. polizza auto,,,,,28.66,False,False,False,False
+2017,1,hornet,008564,Tratt.auto,,,,,37.05,False,False,False,False
+2017,1,hornet,008446,Tratt. Sindacale CISL,,,,,12.38,False,False,False,False
+2017,1,hornet,F94,F.do pens. imp. -c/AZI,,31545.36000,5.25,1656.13,,False,False,False,False
+2017,1,hornet,TFR100,Retribuzione utile TFR,,,,5217.21,,False,False,False,False
+2017,1,hornet,Z7139,Quota TFR a Fondo Mese,,,,368.18,,False,False,False,False
+2017,2,hornet,AA245,Retrib. ordinaria,,15.000,118.70267,1780.54,,True,True,False,False
+2017,2,hornet,003833,Ferie godute,,,,0.500,,False,False,False,False
+2017,2,hornet,008563,Tratt. polizza auto,,,,,36.75,False,False,False,False
+2017,2,hornet,008564,Tratt.auto,,,,,37.05,False,False,False,False
+2017,2,hornet,008446,Tratt. Sindacale CISL,,,,,12.38,False,False,False,False
+2017,2,hornet,WZF001,Credito DL,,,,39.45,,False,False,False,False
+2017,2,hornet,TFR100,Retribuzione utile TFR,,,,3561.08,,False,False,False,False
+2017,2,hornet,Z7139,Quota TFR a Fondo Mese,,,,254.87,,False,False,False,False
+2017,3,hornet,003833,Ferie godute,,,,1.000,,False,False,False,False
+2017,3,hornet,R1120,Tredicesima cessazione,,45.000,9.89183,445.14,,True,True,False,False
+2017,3,hornet,R1220,Quattord.cessaz.rapp.,,45.000,9.89200,445.14,,True,True,False,False
+2017,3,hornet,002741,Tratt. buoni mensa,,9.000,7.00000,63.00,,False,False,False,False
+2017,3,hornet,003916,INC.ESOD ACC.21.12.16,,,,149565.36,,True,False,False,False
+2017,3,hornet,003934,TR.GEN.NOV AC.21.12.16,,,,500.00,,True,True,False,False
+2017,3,hornet,003992,Storno Val. mensa,,14.000,1.71000,23.94,,True,True,False,False
+2017,3,hornet,008563,Tratt. polizza auto,,,,,404.26,False,False,False,False
+2017,3,hornet,008564,Tratt.auto,,,,,74.10,False,False,False,False
+2017,3,hornet,003699,B.ca ore da pagare,,4.000,22.25675,89.03,,True,True,False,False
+2017,3,hornet,F1140,Ferie liquid.cessati,,18.500,159.79205,2956.15,,True,True,False,False
+2017,3,hornet,TFR100,Retribuzione utile TFR,,,,890.28,,False,False,False,False
+2017,3,hornet,Z7139,Quota TFR a Fondo Mese,,,,46.39,,False,False,False,False
+2026,1,zucchetti,Z00016,Recupero Anticipo Fest.,,,,,157.55,True,True,True,True
+2026,1,zucchetti,Z00020,Retribuzione Ordinaria,ORE,120.00000,24.38256,2925.91,,True,True,True,True
+2026,1,zucchetti,Z00256,Permessi Rol goduti,ORE,16.00000,24.38256,390.12,,True,True,True,True
+2026,1,zucchetti,Z00261,Permessi Ex-Fs goduti,ORE,32.00000,24.38256,780.24,,True,True,True,True
+2026,1,zucchetti,Z01146,Fest.Patrono non goduta,GIORNI,1.00000,157.54885,157.55,,True,True,True,True
+2026,1,zucchetti,Z50022,14ma Mensilita',ORE,14.00000,24.38256,341.36,,True,True,True,True
+2026,1,zucchetti,ZP9960,Arrotond. mese pr.,,,,0.24,,False,False,False,False
+2026,1,zucchetti,Z20008,T.F.R. trasferito  FONTE,,,,,318.19,False,False,False,False
+2026,1,zucchetti,Z31000,Contributo Fondo EST,,,,,2.00,False,False,False,False
+2026,1,zucchetti,Z00000,Contributo IVS,,,9.19000,,407.85,False,False,False,False
+2026,1,zucchetti,Z00055,FIS D.Lgs.148/2015 oltre,,,0.26667,,11.83,False,False,False,False
+2026,1,zucchetti,Z00087,Contributo CIGS,,,0.30000,,13.31,False,False,False,False
+2026,1,zucchetti,Z20000,Contr. base  FONTE su retr.TFR,,,0.55000,,25.27,False,False,False,False
+2026,1,zucchetti,Z20000,Contr. base  FONTE su retr.TFR C/Ditta,,,,,71.23,False,False,False,False
+2026,1,zucchetti,Z20003,Contr. vol.  FONTE su retr.TFR,,,0.45000,,20.68,False,False,False,False
+2026,1,zucchetti,F01998,Ctr.prev.compl.deducib.,,,,,117.18,False,False,False,False
+2026,1,zucchetti,F02000,Imponibile IRPEF,,,,3956.69,,False,False,False,False
+2026,1,zucchetti,F02010,IRPEF lorda,,,,1144.23,,False,False,False,False
+2026,1,zucchetti,F03020,Ritenute IRPEF,,,,,1144.23,False,False,False,False
+2026,1,zucchetti,F09110,Addizionale regionale,,,,,71.54,False,False,False,False
+2026,1,zucchetti,F09130,Addizionale comunale,,,,,26.30,False,False,False,False

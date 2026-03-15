@@ -1,6 +1,6 @@
 # Analisi Cedolini
 
-> v0.5.0
+> v0.6.0
 
 Marketplace Claude Code per strumenti di analisi cedolini italiani (buste paga).
 
@@ -136,6 +136,30 @@ I report Markdown includono di default:
 - **Glossario** — solo i termini effettivamente presenti nei dati (IVS, TFR, scaglioni, ecc.)
 
 Le voci del cedolino vengono categorizzate automaticamente (stipendio base, straordinario, permessi, ferie, mensilita' aggiuntiva, ecc.) tramite pattern configurabili in `plugins/cedolini/config/explanations.yaml`.
+
+## Sviluppo
+
+### Regression test
+
+Una suite pytest con snapshot golden CSV protegge la pipeline da regressioni. Dopo ogni modifica a parser, validatori o modelli:
+
+```bash
+pip install pytest
+python3 -m pytest plugins/cedolini/tests/ -v
+```
+
+Dopo modifiche intenzionali all'output (nuovo parser, fix di estrazione), aggiorna gli snapshot:
+
+```bash
+python3 plugins/cedolini/tests/update_snapshots.py
+```
+
+I test verificano su 3 livelli:
+1. **Strutturali** — row count, colonne, coppie anno/mese, formati parser
+2. **Numerici** — campi chiave (netto, competenze, trattenute, INPS, IRPEF) con tolleranza 0.02
+3. **Diff completo** — confronto riga per riga di voci e CUD
+
+Inoltre un test parametrizzato verifica che `detect_format()` restituisca il formato atteso per ogni PDF.
 
 ## Validazioni
 
