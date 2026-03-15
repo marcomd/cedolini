@@ -6,8 +6,8 @@ Marketplace Claude Code per strumenti di analisi cedolini italiani (buste paga).
 
 ## Plugin disponibili
 
-| Plugin | Descrizione |
-| ------ | ----------- |
+| Plugin              | Descrizione                                                                                                  |
+| ------------------- | ------------------------------------------------------------------------------------------------------------ |
 | `verifica-cedolini` | Estrae dati da PDF, valida calcoli (INPS, IRPEF, TFR, netto, ratei), cross-check CUD, genera report Markdown |
 
 ## Installazione
@@ -26,6 +26,8 @@ git clone https://github.com/marcomd/cedolini
 claude --plugin-dir ./cedolini/plugins/verifica-cedolini
 ```
 
+**Nota**: dopo l'installazione potrebbe essere necessario riavviare claude per rendere disponibile il plugin
+
 ## Quick start
 
 Posiziona i PDF dei cedolini in una cartella organizzata per anno:
@@ -40,7 +42,7 @@ i-miei-cedolini/
 Poi lancia la skill:
 
 ```
-/verifica-cedolini:verifica i-miei-cedolini/
+/verifica-cedolini i-miei-cedolini/
 ```
 
 Analisi Cedolini esegue estrazione, validazione e report in automatico.

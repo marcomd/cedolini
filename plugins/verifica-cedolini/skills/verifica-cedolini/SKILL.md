@@ -1,5 +1,5 @@
 ---
-name: verifica
+name: verifica-cedolini
 description: >
   Valida cedolini italiani (buste paga) da PDF. Estrae dati, valida calcoli
   (INPS, IRPEF, TFR, netto, ratei), cross-check CUD, genera report Markdown.
