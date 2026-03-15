@@ -1,9 +1,10 @@
 {
-  "name": "cedolini",
+  "name": "verifica-cedolini",
   "description": "Valida cedolini italiani (buste paga) da PDF: estrae dati, valida calcoli (INPS, IRPEF, TFR, netto, ratei), cross-check CUD, genera report Markdown.",
   "version": "0.5.0",
   "author": {
-    "name": "Mark"
+    "name": "Marco Mastrodonato",
+    "email": "m.mastrodonato@gmail.com"
   },
   "repository": "https://github.com/marcomd/cedolini",
   "license": "MIT",

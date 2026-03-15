@@ -9,7 +9,7 @@ allowed-tools: Bash(python3:*)
 argument-hint: "[cartella-pdf]"
 ---
 
-# VerificaCedolino - Validazione Cedolini Italiani
+# Verifica Cedolini - Validazione Cedolini Italiani
 
 ## Prerequisiti
 

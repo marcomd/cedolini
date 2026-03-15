@@ -2,27 +2,71 @@
 
 > v0.5.0
 
-Toolkit per validare cedolini italiani (buste paga) da PDF.
+Marketplace Claude Code per strumenti di analisi cedolini italiani (buste paga).
 
-Estrae dati, valida calcoli (INPS, IRPEF, TFR, netto, ratei), cross-check con CUD e genera report Markdown con spiegazioni in italiano semplice.
+## Plugin disponibili
+
+| Plugin | Descrizione |
+| ------ | ----------- |
+| `verifica-cedolini` | Estrae dati da PDF, valida calcoli (INPS, IRPEF, TFR, netto, ratei), cross-check CUD, genera report Markdown |
 
 ## Installazione
+
+### Da marketplace (raccomandato)
+
+```bash
+/plugin marketplace add https://github.com/marcomd/cedolini.git
+/plugin install verifica-cedolini@cedolini
+```
 
 ### Da sorgente (sviluppo locale)
 
 ```bash
 git clone https://github.com/marcomd/cedolini
-claude --plugin-dir ./cedolini
+claude --plugin-dir ./cedolini/plugins/verifica-cedolini
 ```
 
-### Da marketplace custom
+## Quick start
 
-Se il plugin viene pubblicato in un marketplace, installalo con:
+Posiziona i PDF dei cedolini in una cartella organizzata per anno:
+
+```
+i-miei-cedolini/
+  2023/          # PDF cedolini 2023
+  2024/          # PDF cedolini 2024
+  CUD/           # Certificazioni Uniche
+```
+
+Poi lancia la skill:
+
+```
+/verifica-cedolini:verifica i-miei-cedolini/
+```
+
+Analisi Cedolini esegue estrazione, validazione e report in automatico.
+
+## Uso standalone (senza Claude Code)
 
 ```bash
-/plugin marketplace add https://github.com/marcomd/cedolini.git
-/plugin install cedolini@marcomd-cedolini
+pip install -r plugins/verifica-cedolini/requirements.txt
+
+# Fase 1: Estrazione dati da PDF → CSV
+python3 plugins/verifica-cedolini/scripts/extract.py --input-dir cartella-pdf/
+
+# Fase 2: Validazione calcoli
+python3 plugins/verifica-cedolini/scripts/validate.py --input-dir cartella-pdf/
+
+# Fase 3: Generazione report Markdown (con spiegazioni)
+python3 plugins/verifica-cedolini/scripts/report.py --input-dir cartella-pdf/
+
+# Report senza spiegazioni (output compatibile con v0.2)
+python3 plugins/verifica-cedolini/scripts/report.py --input-dir cartella-pdf/ --no-explain
+
+# Report senza breakdown mensili (solo riepilogo annuale, piu' compatto)
+python3 plugins/verifica-cedolini/scripts/report.py --input-dir cartella-pdf/ --no-monthly-explain
 ```
+
+L'output viene scritto in `output/` (personalizzabile con `--output-dir`).
 
 ## Formati supportati
 
@@ -37,49 +81,7 @@ Se il plugin viene pubblicato in un marketplace, installalo con:
 - **Commercio e Terziario** — IVS, CIGS, FIS, FON.TE, EST
 - **Assicurativo** — IVS, Fondo Solidarieta'
 
-Il CCNL viene auto-rilevato dal contratto o dalla ragione sociale. Le aliquote contributive sono configurate in `config/ccnl/` (file YAML).
-
-## Quick start con Claude Code
-
-Posiziona i PDF dei cedolini in una cartella organizzata per anno:
-
-```
-i-miei-cedolini/
-  2023/          # PDF cedolini 2023
-  2024/          # PDF cedolini 2024
-  CUD/           # Certificazioni Uniche
-```
-
-Poi lancia la skill:
-
-```
-/cedolini:verifica i-miei-cedolini/
-```
-
-Analisi Cedolini esegue estrazione, validazione e report in automatico.
-
-## Uso standalone (senza Claude Code)
-
-```bash
-pip install -r requirements.txt
-
-# Fase 1: Estrazione dati da PDF → CSV
-python3 scripts/extract.py --input-dir cartella-pdf/
-
-# Fase 2: Validazione calcoli
-python3 scripts/validate.py --input-dir cartella-pdf/
-
-# Fase 3: Generazione report Markdown (con spiegazioni)
-python3 scripts/report.py --input-dir cartella-pdf/
-
-# Report senza spiegazioni (output compatibile con v0.2)
-python3 scripts/report.py --input-dir cartella-pdf/ --no-explain
-
-# Report senza breakdown mensili (solo riepilogo annuale, piu' compatto)
-python3 scripts/report.py --input-dir cartella-pdf/ --no-monthly-explain
-```
-
-L'output viene scritto in `output/` (personalizzabile con `--output-dir`).
+Il CCNL viene auto-rilevato dal contratto o dalla ragione sociale. Le aliquote contributive sono configurate in `plugins/verifica-cedolini/config/ccnl/` (file YAML).
 
 ## Struttura input
 
@@ -107,7 +109,7 @@ I report Markdown includono di default:
 - **Note anomalie** — spiegazione in italiano al posto della formula tecnica
 - **Glossario** — solo i termini effettivamente presenti nei dati (IVS, TFR, scaglioni, ecc.)
 
-Le voci del cedolino vengono categorizzate automaticamente (stipendio base, straordinario, permessi, ferie, mensilita' aggiuntiva, ecc.) tramite pattern configurabili in `config/explanations.yaml`.
+Le voci del cedolino vengono categorizzate automaticamente (stipendio base, straordinario, permessi, ferie, mensilita' aggiuntiva, ecc.) tramite pattern configurabili in `plugins/verifica-cedolini/config/explanations.yaml`.
 
 ## Validazioni
 

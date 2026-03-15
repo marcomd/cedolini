@@ -1,0 +1,17 @@
+{
+  "name": "cedolini",
+  "owner": {
+    "name": "Marco Mastrodonato",
+    "email": "m.mastrodonato@gmail.com"
+  },
+  "metadata": {
+    "description": "Marketplace per strumenti di analisi cedolini italiani"
+  },
+  "plugins": [
+    {
+      "name": "verifica-cedolini",
+      "source": "./plugins/verifica-cedolini",
+      "description": "Valida cedolini italiani (buste paga) da PDF: estrae dati, valida calcoli (INPS, IRPEF, TFR, netto, ratei), cross-check CUD, genera report Markdown."
+    }
+  ]
+}
