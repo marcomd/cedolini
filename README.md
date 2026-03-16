@@ -1,6 +1,6 @@
 # Analisi Cedolini
 
-> v0.6.0
+> v0.7.0
 
 Marketplace Claude Code per strumenti di analisi cedolini italiani (buste paga).
 
@@ -100,6 +100,7 @@ L'output viene scritto in `output/` (personalizzabile con `--output-dir`).
 - **Zucchetti** — rilevato dal footer "Zucchetti"
 - **ADP Legacy** — rilevato dal footer "www.it-adp.com" (multi-cedolino, 2 pagine per cedolino)
 - **Hornet/HCM** — rilevato dal marker "HRZ_MODEL" nell'header
+- **CSSPaghe** — rilevato da "LIBRO UNICO DEL LAVORO" + "TOTALE ELEMENTI RETRIBUTIVI"
 - **CUD** — Certificazione Unica Agenzia Entrate
 
 ## CCNL supportati

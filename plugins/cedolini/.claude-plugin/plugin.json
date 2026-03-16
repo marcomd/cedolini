@@ -1,7 +1,7 @@
 {
   "name": "cedolini",
   "description": "Valida cedolini italiani (buste paga) da PDF: estrae dati, valida calcoli (INPS, IRPEF, TFR, netto, ratei), cross-check CUD, genera report Markdown.",
-  "version": "0.5.0",
+  "version": "0.7.0",
   "author": {
     "name": "Marco Mastrodonato",
     "email": "m.mastrodonato@gmail.com"

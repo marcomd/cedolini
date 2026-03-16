@@ -144,7 +144,7 @@ class Cedolino:
     """Contenitore principale per un cedolino."""
     # Metadata
     file_path: str = ""
-    formato: str = ""  # "sistemi", "zucchetti", "adp_legacy", "hornet"
+    formato: str = ""  # "sistemi", "zucchetti", "adp_legacy", "hornet", "csspaghe"
     num_pagine: int = 1
     ccnl: str = ""  # CCNL id, e.g. "commercio", "assicurativo"
 

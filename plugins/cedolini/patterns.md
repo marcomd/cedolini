@@ -42,6 +42,20 @@
 - Fiscal grid on page 2 with labeled fields (IMPOSTA LORDA, DETR. LAV. DIP, etc.)
 - CCNL detected automatically via `detect_ccnl()` in validate phase
 
+### CSSPaghe
+- Detection: "LIBRO UNICO DEL LAVORO" AND "TOTALE ELEMENTI RETRIBUTIVI" in text
+- Single page per cedolino, 3 pdfplumber-extractable tables
+- Table 0 (11 rows x 33 cols): header/company/employee data with "label\nvalue" cells
+- Table 1 (4 rows x 20 cols): voci retributive (multi-line cells, one row for all voci)
+- Table 2 (9 rows x 8 cols): TFR, INPS, IRPEF, arrotondamento, netto, progressivi, ferie/permessi
+- TOTALE COMPETENZE in Table 1 Row 3 may have spaced digits: "160 7 , 1 4" -> clean spaces before parsing
+- EST/ES0 voci: EST (quota ditta) shows parenthesized informational amount, ES0 (quota dip) has ritenute
+- IRPEF-TOTAL = monthly IRPEF retained/refunded (does NOT include year-end addizionali)
+- BONUS DL6614: positive = tax credit (reduces trattenute), negative = recovery (increases trattenute)
+- Netto: `comp - (voci_rit + INPS + IRPEF_TOTAL - BONUS) + (arrot_corr - arrot_prec)`
+- Addizionali regionali/comunali shown in December are year-end calculations, deducted next year
+- CCNL detected automatically via `detect_ccnl()` in validate phase
+
 ### CUD
 - Multi-page modulistic format
 - Key points: 1 (reddito), 21 (ritenute), 22 (add. regionale), 412 (prev. complementare)
@@ -54,6 +68,7 @@
 - Zucchetti: `comp - tratt + arr`
 - ADP Legacy: `comp - tratt + arr_attuale - arr_preced` (same as Sistemi)
 - Hornet: `comp - tratt` (arrotondamento=ZERO, embedded in voci)
+- CSSPaghe: `comp - (voci_rit + INPS + IRPEF_TOTAL - BONUS) + (arr_corr - arr_prec)`
 
 ### INPS
 - Contributions now CCNL-driven via `config/ccnl/*.yaml`

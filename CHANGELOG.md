@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.7.0] - 2026-03-16
+
+### Added
+- Parser CSSPaghe per cedolini "Libro Unico del Lavoro" (formato Fractalgarden S.R.L.)
+- Rilevamento automatico tramite marker "LIBRO UNICO DEL LAVORO" + "TOTALE ELEMENTI RETRIBUTIVI"
+- Estrazione via tabelle pdfplumber (3 tabelle per pagina): header, voci, sezione fiscale/previdenziale
+- Gestione numeri spaziati nel PDF (es. "160 7 , 1 4" → 1607,14)
+- Formula netto: `comp - (voci_rit + INPS + IRPEF_TOTAL - BONUS) + (arrot_corr - arrot_prec)`
+- Supporto BONUS DL6614 positivo (credito) e negativo (recupero)
+- Estrazione progressivi INPS, IRPEF, ratei ferie/permessi
+- Sezione CSSPaghe in patterns.md con quirk e formula netto
+- Snapshot regression aggiornati con 11 cedolini Fractalgarden (feb-dic 2017)
+
 ## [0.6.0] - 2026-03-15
 
 ### Added

@@ -154,6 +154,9 @@ anno,mese,formato,codice,descrizione,unita_misura,quantita,base,competenze,tratt
 2017,2,hornet,WZF001,Credito DL,,,,39.45,,False,False,False,False
 2017,2,hornet,TFR100,Retribuzione utile TFR,,,,3561.08,,False,False,False,False
 2017,2,hornet,Z7139,Quota TFR a Fondo Mese,,,,254.87,,False,False,False,False
+2017,2,csspaghe,20,GG Stipendio nTfr,,,,,,False,False,False,False
+2017,2,csspaghe,EST,F.DO EST (TERZ) - QUOTA DITTA,,,,,,False,False,False,False
+2017,2,csspaghe,ES0,F.DO EST (TERZ) - QUOTA DIP,,,,,,False,False,False,False
 2017,3,hornet,003833,Ferie godute,,,,1.000,,False,False,False,False
 2017,3,hornet,R1120,Tredicesima cessazione,,45.000,9.89183,445.14,,True,True,False,False
 2017,3,hornet,R1220,Quattord.cessaz.rapp.,,45.000,9.89200,445.14,,True,True,False,False
@@ -167,6 +170,65 @@ anno,mese,formato,codice,descrizione,unita_misura,quantita,base,competenze,tratt
 2017,3,hornet,F1140,Ferie liquid.cessati,,18.500,159.79205,2956.15,,True,True,False,False
 2017,3,hornet,TFR100,Retribuzione utile TFR,,,,890.28,,False,False,False,False
 2017,3,hornet,Z7139,Quota TFR a Fondo Mese,,,,46.39,,False,False,False,False
+2017,3,csspaghe,1,STIPENDIO MENSILE,,,,,,False,False,False,False
+2017,3,csspaghe,202,XIII MENS. RATEI,,,,,,False,False,False,False
+2017,3,csspaghe,203,XIV MENS. RATEI,,,,,,False,False,False,False
+2017,3,csspaghe,EST,F.DO EST (TERZ) - QUOTA DITTA,,,,,,False,False,False,False
+2017,3,csspaghe,ES0,F.DO EST (TERZ) - QUOTA DIP,,,,,,False,False,False,False
+2017,4,csspaghe,1,STIPENDIO MENSILE,,,,,,False,False,False,False
+2017,4,csspaghe,202,XIII MENS. RATEI,,,,,,False,False,False,False
+2017,4,csspaghe,203,XIV MENS. RATEI,,,,,,False,False,False,False
+2017,4,csspaghe,EST,F.DO EST (TERZ) - QUOTA DITTA,,,,,,False,False,False,False
+2017,4,csspaghe,ES0,F.DO EST (TERZ) - QUOTA DIP,,,,,,False,False,False,False
+2017,5,csspaghe,1,STIPENDIO MENSILE,,,,,,False,False,False,False
+2017,5,csspaghe,D14,DONAZIONE SANGUE - GG,,,,,,False,False,False,False
+2017,5,csspaghe,202,XIII MENS. RATEI,,,,,,False,False,False,False
+2017,5,csspaghe,203,XIV MENS. RATEI,,,,,,False,False,False,False
+2017,5,csspaghe,EST,F.DO EST (TERZ) - QUOTA DITTA,,,,,,False,False,False,False
+2017,5,csspaghe,ES0,F.DO EST (TERZ) - QUOTA DIP,,,,,,False,False,False,False
+2017,6,csspaghe,1,STIPENDIO MENSILE,,,,,,False,False,False,False
+2017,6,csspaghe,202,XIII MENS. RATEI,,,,,,False,False,False,False
+2017,6,csspaghe,203,XIV MENS. RATEI,,,,,,False,False,False,False
+2017,6,csspaghe,EST,F.DO EST (TERZ) - QUOTA DITTA,,,,,,False,False,False,False
+2017,6,csspaghe,ES0,F.DO EST (TERZ) - QUOTA DIP,,,,,,False,False,False,False
+2017,7,csspaghe,1,STIPENDIO MENSILE,,,,,,False,False,False,False
+2017,7,csspaghe,=06,730 IRPEF RIMBORSO,,,,,,False,False,False,False
+2017,7,csspaghe,=07,730 IRPEF RIMBORSO CONIUGE,,,,,,False,False,False,False
+2017,7,csspaghe,322,FERIE GODUTE - GG,,,,,,False,False,False,False
+2017,7,csspaghe,202,XIII MENS. RATEI,,,,,,False,False,False,False
+2017,7,csspaghe,203,XIV MENS. RATEI,,,,,,False,False,False,False
+2017,7,csspaghe,EST,F.DO EST (TERZ) - QUOTA DITTA,,,,,,False,False,False,False
+2017,7,csspaghe,ES0,F.DO EST (TERZ) - QUOTA DIP,,,,,,False,False,False,False
+2017,8,csspaghe,1,STIPENDIO MENSILE,,,,,,False,False,False,False
+2017,8,csspaghe,322,FERIE GODUTE - GG,,,,,,False,False,False,False
+2017,8,csspaghe,202,XIII MENS. RATEI,,,,,,False,False,False,False
+2017,8,csspaghe,203,XIV MENS. RATEI,,,,,,False,False,False,False
+2017,8,csspaghe,EST,F.DO EST (TERZ) - QUOTA DITTA,,,,,,False,False,False,False
+2017,8,csspaghe,ES0,F.DO EST (TERZ) - QUOTA DIP,,,,,,False,False,False,False
+2017,9,csspaghe,1,STIPENDIO MENSILE,,,,,,False,False,False,False
+2017,9,csspaghe,202,XIII MENS. RATEI,,,,,,False,False,False,False
+2017,9,csspaghe,203,XIV MENS. RATEI,,,,,,False,False,False,False
+2017,9,csspaghe,EST,F.DO EST (TERZ) - QUOTA DITTA,,,,,,False,False,False,False
+2017,9,csspaghe,ES0,F.DO EST (TERZ) - QUOTA DIP,,,,,,False,False,False,False
+2017,10,csspaghe,1,STIPENDIO MENSILE,,,,,,False,False,False,False
+2017,10,csspaghe,322,FERIE GODUTE - GG,,,,,,False,False,False,False
+2017,10,csspaghe,202,XIII MENS. RATEI,,,,,,False,False,False,False
+2017,10,csspaghe,203,XIV MENS. RATEI,,,,,,False,False,False,False
+2017,10,csspaghe,EST,F.DO EST (TERZ) - QUOTA DITTA,,,,,,False,False,False,False
+2017,10,csspaghe,ES0,F.DO EST (TERZ) - QUOTA DIP,,,,,,False,False,False,False
+2017,11,csspaghe,1,STIPENDIO MENSILE,,,,,,False,False,False,False
+2017,11,csspaghe,300,FESTIVITA' - GG,,,,,,False,False,False,False
+2017,11,csspaghe,D14,DONAZIONE SANGUE - GG,,,,,,False,False,False,False
+2017,11,csspaghe,202,XIII MENS. RATEI,,,,,,False,False,False,False
+2017,11,csspaghe,203,XIV MENS. RATEI,,,,,,False,False,False,False
+2017,11,csspaghe,EST,F.DO EST (TERZ) - QUOTA DITTA,,,,,,False,False,False,False
+2017,11,csspaghe,ES0,F.DO EST (TERZ) - QUOTA DIP,,,,,,False,False,False,False
+2017,12,csspaghe,1,STIPENDIO MENSILE,,,,,,False,False,False,False
+2017,12,csspaghe,331,PERMESSI GODUTI - Ore,,,,,,False,False,False,False
+2017,12,csspaghe,202,XIII MENS. RATEI,,,,,,False,False,False,False
+2017,12,csspaghe,203,XIV MENS. RATEI,,,,,,False,False,False,False
+2017,12,csspaghe,EST,F.DO EST (TERZ) - QUOTA DITTA,,,,,,False,False,False,False
+2017,12,csspaghe,ES0,F.DO EST (TERZ) - QUOTA DIP,,,,,,False,False,False,False
 2026,1,zucchetti,Z00016,Recupero Anticipo Fest.,,,,,157.55,True,True,True,True
 2026,1,zucchetti,Z00020,Retribuzione Ordinaria,ORE,120.00000,24.38256,2925.91,,True,True,True,True
 2026,1,zucchetti,Z00256,Permessi Rol goduti,ORE,16.00000,24.38256,390.12,,True,True,True,True

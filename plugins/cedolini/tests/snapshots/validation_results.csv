@@ -18,6 +18,17 @@ Netto in busta,2016,2,Febbraio 2016,PASS,2199.00,2199.00,0.00,0.02,comp(3562.03)
 Netto in busta,2016,3,Marzo 2016,PASS,2136.00,2136.00,0.00,0.02,comp(3561.53) - tratt(1425.53) + arr(0) = 2136.00,
 Netto in busta,2017,1,Gennaio 2017,PASS,2199.00,2199.00,0.00,0.02,comp(3634.76) - tratt(1435.76) + arr(0) = 2199.00,
 Netto in busta,2017,2,Febbraio 2017,PASS,1301.86,1301.86,0.00,0.02,comp(1901.53) - tratt(599.67) + arr(0) = 1301.86,
+Netto in busta,2017,2,FEBBRAIO 2017,PASS,1200.00,1200.00,0.00,0.02,comp(1607.14) - tratt(407.28) + arr(0.14) = 1200.00,
+Netto in busta,2017,3,MARZO 2017,PASS,2439.00,2439.00,0.00,0.02,comp(3750.01) - tratt(1310.91) + arr(-0.10) = 2439.00,
+Netto in busta,2017,4,APRILE 2017,PASS,2439.00,2439.00,0.00,0.02,comp(3750.01) - tratt(1311.74) + arr(0.73) = 2439.00,
+Netto in busta,2017,5,MAGGIO 2017,PASS,2491.00,2491.00,0.00,0.02,comp(3750.01) - tratt(1258.62) + arr(-0.39) = 2491.00,
+Netto in busta,2017,6,GIUGNO 2017,PASS,2461.00,2461.00,0.00,0.02,comp(3750.01) - tratt(1289.53) + arr(0.52) = 2461.00,
+Netto in busta,2017,7,LUGLIO 2017,PASS,2946.00,2946.00,0.00,0.02,comp(4212.01) - tratt(1265.29) + arr(-0.72) = 2946.00,
+Netto in busta,2017,8,AGOSTO 2017,PASS,2485.00,2485.00,0.00,0.02,comp(3750.01) - tratt(1265.29) + arr(0.28) = 2485.00,
+Netto in busta,2017,9,SETTEMBRE 2017,PASS,2484.00,2484.00,0.00,0.02,comp(3750.01) - tratt(1266.12) + arr(0.11) = 2484.00,
+Netto in busta,2017,10,OTTOBRE 2017,PASS,2485.00,2485.00,0.00,0.02,comp(3750.01) - tratt(1265.29) + arr(0.28) = 2485.00,
+Netto in busta,2017,11,NOVEMBRE 2017,PASS,2555.00,2555.00,0.00,0.02,comp(3873.64) - tratt(1318.58) + arr(-0.06) = 2555.00,
+Netto in busta,2017,12,DICEMBRE 2017,PASS,3415.00,3415.00,0.00,0.02,comp(3750.01) - tratt(334.43) + arr(-0.58) = 3415.00,
 Netto in busta,2026,1,Gennaio 2026,PASS,2715.00,2715.00,0.00,0.02,comp(4595.18) - tratt(1880.80) + arr(0.62) = 2715.00,
 Contributo IVS,2007,1,GENNAIO 2007,PASS,230.76,230.76,0.00,0.02,2511.00 * 0.0919 = 230.76,
 Contributo IVS,2007,2,FEBBRAIO 2007,PASS,237.75,237.75,0.00,0.02,2587.00 * 0.0919 = 237.75,
@@ -65,7 +76,17 @@ IRPEF lorda mensile (stima),2016,2,Febbraio 2016,WARNING,932.01,975.81,43.80,5.0
 IRPEF lorda mensile (stima),2016,3,Marzo 2016,WARNING,932.02,975.81,43.79,5.00,IRPEF_annua(39116.28) / 12,"Stima basata su proiezione lineare, differenze attese per metodo cumulativo"
 IRPEF lorda mensile (stima),2017,1,Gennaio 2017,WARNING,953.68,997.47,43.79,5.00,IRPEF_annua(39800.28) / 12,"Stima basata su proiezione lineare, differenze attese per metodo cumulativo"
 IRPEF lorda mensile (stima),2017,2,Febbraio 2017,WARNING,386.07,393.21,7.14,5.00,IRPEF_annua(19381.08) / 12,"Stima basata su proiezione lineare, differenze attese per metodo cumulativo"
+IRPEF lorda mensile (stima),2017,2,FEBBRAIO 2017,PASS,343.51,343.51,0.00,5.00,IRPEF_annua(17489.52) / 12,"Stima basata su proiezione lineare, differenze attese per metodo cumulativo"
 IRPEF lorda mensile (stima),2017,3,Marzo 2017,WARNING,1041.61,1085.41,43.80,5.00,IRPEF_annua(42577.20) / 12,"Stima basata su proiezione lineare, differenze attese per metodo cumulativo"
+IRPEF lorda mensile (stima),2017,3,MARZO 2017,PASS,984.48,984.48,0.00,5.00,IRPEF_annua(40773.00) / 12,"Stima basata su proiezione lineare, differenze attese per metodo cumulativo"
+IRPEF lorda mensile (stima),2017,4,APRILE 2017,PASS,984.48,984.48,0.00,5.00,IRPEF_annua(40773.00) / 12,"Stima basata su proiezione lineare, differenze attese per metodo cumulativo"
+IRPEF lorda mensile (stima),2017,5,MAGGIO 2017,PASS,988.88,988.88,0.00,5.00,IRPEF_annua(40912.08) / 12,"Stima basata su proiezione lineare, differenze attese per metodo cumulativo"
+IRPEF lorda mensile (stima),2017,6,GIUGNO 2017,PASS,984.48,984.48,0.00,5.00,IRPEF_annua(40773.00) / 12,"Stima basata su proiezione lineare, differenze attese per metodo cumulativo"
+IRPEF lorda mensile (stima),2017,7,LUGLIO 2017,PASS,984.48,984.48,0.00,5.00,IRPEF_annua(40773.00) / 12,"Stima basata su proiezione lineare, differenze attese per metodo cumulativo"
+IRPEF lorda mensile (stima),2017,8,AGOSTO 2017,PASS,984.48,984.48,0.00,5.00,IRPEF_annua(40773.00) / 12,"Stima basata su proiezione lineare, differenze attese per metodo cumulativo"
+IRPEF lorda mensile (stima),2017,9,SETTEMBRE 2017,PASS,984.48,984.48,0.00,5.00,IRPEF_annua(40773.00) / 12,"Stima basata su proiezione lineare, differenze attese per metodo cumulativo"
+IRPEF lorda mensile (stima),2017,10,OTTOBRE 2017,PASS,984.48,984.48,0.00,5.00,IRPEF_annua(40773.00) / 12,"Stima basata su proiezione lineare, differenze attese per metodo cumulativo"
+IRPEF lorda mensile (stima),2017,11,NOVEMBRE 2017,PASS,1031.46,1031.46,0.00,5.00,IRPEF_annua(42256.56) / 12,"Stima basata su proiezione lineare, differenze attese per metodo cumulativo"
 IRPEF lorda mensile (stima),2026,1,Gennaio 2026,WARNING,1104.84,1144.23,39.39,5.00,IRPEF_annua(47480.28) / 12,"Stima basata su proiezione lineare, differenze attese per metodo cumulativo"
 IRPEF lorda annuale,2007,12,Conguaglio 2007,PASS,10356.91,10356.91,0.00,1.00,Scaglioni su imponibile 36939.24,
 Quota TFR mensile,2007,7,LUGLIO 2007,FAIL,1525.28,280.54,1244.74,0.02,TFR mese (177.49) + contr. agg. (103.05) = 280.54 vs 20591.33/13.5 = 1525.28,
@@ -83,6 +104,16 @@ Contributo agg. TFR,2007,12,DICEMBRE 2007,WARNING,196.78,204.63,7.85,1.00,39356.
 Quota TFR mensile,2017,1,Gennaio 2017,FAIL,360.37,368.18,7.81,1.50,5217.21/13.5 = 386.46; TFR netto 368.18 => contr. agg. implicito = 18.28 vs rif. 0.5% = 26.09,
 Quota TFR mensile,2017,2,Febbraio 2017,FAIL,245.97,254.87,8.90,1.50,3561.08/13.5 = 263.78; TFR netto 254.87 => contr. agg. implicito = 8.91 vs rif. 0.5% = 17.81,
 Quota TFR mensile,2017,3,Marzo 2017,FAIL,61.50,46.39,15.11,1.50,890.28/13.5 = 65.95; TFR netto 46.39 => contr. agg. implicito = 19.56 vs rif. 0.5% = 4.45,
+Quota TFR mensile,2017,3,MARZO 2017,PASS,259.03,259.03,0.00,1.50,3750.01/13.5 = 277.78; TFR netto 259.03 => contr. agg. implicito = 18.75 vs rif. 0.5% = 18.75,
+Quota TFR mensile,2017,4,APRILE 2017,PASS,259.03,259.03,0.00,1.50,3750.01/13.5 = 277.78; TFR netto 259.03 => contr. agg. implicito = 18.75 vs rif. 0.5% = 18.75,
+Quota TFR mensile,2017,5,MAGGIO 2017,PASS,259.03,259.65,0.62,1.50,3750.01/13.5 = 277.78; TFR netto 259.65 => contr. agg. implicito = 18.13 vs rif. 0.5% = 18.75,
+Quota TFR mensile,2017,6,GIUGNO 2017,PASS,259.03,259.03,0.00,1.50,3750.01/13.5 = 277.78; TFR netto 259.03 => contr. agg. implicito = 18.75 vs rif. 0.5% = 18.75,
+Quota TFR mensile,2017,7,LUGLIO 2017,PASS,259.03,259.03,0.00,1.50,3750.01/13.5 = 277.78; TFR netto 259.03 => contr. agg. implicito = 18.75 vs rif. 0.5% = 18.75,
+Quota TFR mensile,2017,8,AGOSTO 2017,PASS,259.03,259.03,0.00,1.50,3750.01/13.5 = 277.78; TFR netto 259.03 => contr. agg. implicito = 18.75 vs rif. 0.5% = 18.75,
+Quota TFR mensile,2017,9,SETTEMBRE 2017,PASS,259.03,259.03,0.00,1.50,3750.01/13.5 = 277.78; TFR netto 259.03 => contr. agg. implicito = 18.75 vs rif. 0.5% = 18.75,
+Quota TFR mensile,2017,10,OTTOBRE 2017,PASS,259.03,259.03,0.00,1.50,3750.01/13.5 = 277.78; TFR netto 259.03 => contr. agg. implicito = 18.75 vs rif. 0.5% = 18.75,
+Quota TFR mensile,2017,11,NOVEMBRE 2017,PASS,267.57,268.19,0.62,1.50,3873.64/13.5 = 286.94; TFR netto 268.19 => contr. agg. implicito = 18.75 vs rif. 0.5% = 19.37,
+Quota TFR mensile,2017,12,DICEMBRE 2017,PASS,259.03,259.03,0.00,1.50,3750.01/13.5 = 277.78; TFR netto 259.03 => contr. agg. implicito = 18.75 vs rif. 0.5% = 18.75,
 Quota TFR mensile,2026,1,Gennaio 2026,PASS,317.40,318.19,0.79,1.50,4595.18/13.5 = 340.38; TFR netto 318.19 => contr. agg. implicito = 22.19 vs rif. 0.5% = 22.98,
 TFR annuo progressivo,2026,1,Anno 2026,PASS,318.19,318.19,0.00,1.00,Somma TFR mensili = 318.19,
 Calcolo saldo Ferie,2007,1,GENNAIO 2007,FAIL,30.00,2.50,27.50,0.01,residuo_ap(27.50) + maturato(2.50) - goduto(0),
@@ -101,6 +132,26 @@ Calcolo saldo Ferie,2016,2,Febbraio 2016,PASS,18.000,18.000,0.000,0.01,residuo_a
 Calcolo saldo Ferie,2016,3,Marzo 2016,PASS,20.500,20.500,0.000,0.01,residuo_ap(14.000) + maturato(7.500) - goduto(1.000),
 Calcolo saldo Ferie,2017,1,Gennaio 2017,PASS,19.917,19.917,0.000,0.01,residuo_ap(17.500) + maturato(2.417) - goduto(0),
 Calcolo saldo Ferie,2017,2,Febbraio 2017,PASS,19.500,19.500,0.000,0.01,residuo_ap(17.500) + maturato(2.500) - goduto(0.500),
+Calcolo saldo Ferie,2017,3,MARZO 2017,PASS,1.830,1.830,0.000,0.01,residuo_ap(0) + maturato(1.830) - goduto(0),
+Calcolo saldo Permessi R.O.L.,2017,3,MARZO 2017,PASS,2.670,2.670,0.000,0.01,residuo_ap(0) + maturato(2.670) - goduto(0),
+Calcolo saldo Ferie,2017,4,APRILE 2017,PASS,3.660,3.660,0.000,0.01,residuo_ap(0) + maturato(3.660) - goduto(0),
+Calcolo saldo Permessi R.O.L.,2017,4,APRILE 2017,PASS,5.340,5.340,0.000,0.01,residuo_ap(0) + maturato(5.340) - goduto(0),
+Calcolo saldo Ferie,2017,5,MAGGIO 2017,PASS,5.490,5.490,0.000,0.01,residuo_ap(0) + maturato(5.490) - goduto(0),
+Calcolo saldo Permessi R.O.L.,2017,5,MAGGIO 2017,PASS,8.010,8.010,0.000,0.01,residuo_ap(0) + maturato(8.010) - goduto(0),
+Calcolo saldo Ferie,2017,6,GIUGNO 2017,PASS,7.320,7.320,0.000,0.01,residuo_ap(0) + maturato(7.320) - goduto(0),
+Calcolo saldo Permessi R.O.L.,2017,6,GIUGNO 2017,PASS,10.680,10.680,0.000,0.01,residuo_ap(0) + maturato(10.680) - goduto(0),
+Calcolo saldo Ferie,2017,7,LUGLIO 2017,FAIL,-0.850,0,0.850,0.01,residuo_ap(0) + maturato(9.150) - goduto(10.000),
+Calcolo saldo Permessi R.O.L.,2017,7,LUGLIO 2017,PASS,13.350,13.350,0.000,0.01,residuo_ap(0) + maturato(13.350) - goduto(0),
+Calcolo saldo Ferie,2017,8,AGOSTO 2017,FAIL,-0.020,0,0.020,0.01,residuo_ap(0) + maturato(10.980) - goduto(11.000),
+Calcolo saldo Permessi R.O.L.,2017,8,AGOSTO 2017,PASS,16.020,16.020,0.000,0.01,residuo_ap(0) + maturato(16.020) - goduto(0),
+Calcolo saldo Ferie,2017,9,SETTEMBRE 2017,PASS,1.810,1.810,0.000,0.01,residuo_ap(0) + maturato(12.810) - goduto(11.000),
+Calcolo saldo Permessi R.O.L.,2017,9,SETTEMBRE 2017,PASS,18.690,18.690,0.000,0.01,residuo_ap(0) + maturato(18.690) - goduto(0),
+Calcolo saldo Ferie,2017,10,OTTOBRE 2017,PASS,2.640,2.640,0.000,0.01,residuo_ap(0) + maturato(14.640) - goduto(12.000),
+Calcolo saldo Permessi R.O.L.,2017,10,OTTOBRE 2017,PASS,21.360,21.360,0.000,0.01,residuo_ap(0) + maturato(21.360) - goduto(0),
+Calcolo saldo Ferie,2017,11,NOVEMBRE 2017,PASS,4.470,4.470,0.000,0.01,residuo_ap(0) + maturato(16.470) - goduto(12.000),
+Calcolo saldo Permessi R.O.L.,2017,11,NOVEMBRE 2017,PASS,24.030,24.030,0.000,0.01,residuo_ap(0) + maturato(24.030) - goduto(0),
+Calcolo saldo Ferie,2017,12,DICEMBRE 2017,PASS,6.300,6.300,0.000,0.01,residuo_ap(0) + maturato(18.300) - goduto(12.000),
+Calcolo saldo Permessi R.O.L.,2017,12,DICEMBRE 2017,PASS,10.700,10.700,0.000,0.01,residuo_ap(0) + maturato(26.700) - goduto(16.000),
 Calcolo saldo Perm.Ex-Fs,2026,1,Gennaio 2026,PASS,35.99666,35.99666,0.00000,0.01,residuo_ap(65.33000) + maturato(2.66666) - goduto(32.00000),
 Continuita' annuale Ferie,2016,3,Marzo 2016 -> Gennaio 2017,FAIL,20.500,17.500,3.000,0.01,saldo dic 2016 = residuo_ap gen 2017,
 Residuo AP costante Ferie,2007,2,FEBBRAIO 2007,FAIL,27.50,30.00,2.50,0.01,residuo_ap deve essere costante nell'anno (rif. mese 1),
@@ -114,3 +165,13 @@ Residuo AP costante Ferie,2007,9,SETTEMBRE 2007,FAIL,27.50,30.00,2.50,0.01,resid
 Residuo AP costante Ferie,2007,10,OTTOBRE 2007,FAIL,27.50,30.00,2.50,0.01,residuo_ap deve essere costante nell'anno (rif. mese 1),
 Residuo AP costante Ferie,2007,11,NOVEMBRE 2007,FAIL,27.50,30.00,2.50,0.01,residuo_ap deve essere costante nell'anno (rif. mese 1),
 Residuo AP costante Ferie,2007,12,DICEMBRE 2007,FAIL,27.50,30.00,2.50,0.01,residuo_ap deve essere costante nell'anno (rif. mese 1),
+Residuo AP costante Ferie,2017,3,MARZO 2017,FAIL,17.500,0,17.500,0.01,residuo_ap deve essere costante nell'anno (rif. mese 1),
+Residuo AP costante Ferie,2017,4,APRILE 2017,FAIL,17.500,0,17.500,0.01,residuo_ap deve essere costante nell'anno (rif. mese 1),
+Residuo AP costante Ferie,2017,5,MAGGIO 2017,FAIL,17.500,0,17.500,0.01,residuo_ap deve essere costante nell'anno (rif. mese 1),
+Residuo AP costante Ferie,2017,6,GIUGNO 2017,FAIL,17.500,0,17.500,0.01,residuo_ap deve essere costante nell'anno (rif. mese 1),
+Residuo AP costante Ferie,2017,7,LUGLIO 2017,FAIL,17.500,0,17.500,0.01,residuo_ap deve essere costante nell'anno (rif. mese 1),
+Residuo AP costante Ferie,2017,8,AGOSTO 2017,FAIL,17.500,0,17.500,0.01,residuo_ap deve essere costante nell'anno (rif. mese 1),
+Residuo AP costante Ferie,2017,9,SETTEMBRE 2017,FAIL,17.500,0,17.500,0.01,residuo_ap deve essere costante nell'anno (rif. mese 1),
+Residuo AP costante Ferie,2017,10,OTTOBRE 2017,FAIL,17.500,0,17.500,0.01,residuo_ap deve essere costante nell'anno (rif. mese 1),
+Residuo AP costante Ferie,2017,11,NOVEMBRE 2017,FAIL,17.500,0,17.500,0.01,residuo_ap deve essere costante nell'anno (rif. mese 1),
+Residuo AP costante Ferie,2017,12,DICEMBRE 2017,FAIL,17.500,0,17.500,0.01,residuo_ap deve essere costante nell'anno (rif. mese 1),
