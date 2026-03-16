@@ -2,7 +2,9 @@
 
 > v0.7.0
 
-Marketplace Claude Code per strumenti di analisi cedolini italiani (buste paga).
+Marketplace [Claude Code](https://docs.anthropic.com/en/docs/claude-code) per strumenti di analisi cedolini italiani (buste paga).
+
+Dai in pasto i PDF delle tue buste paga e ottieni un report che verifica se i calcoli tornano: INPS, IRPEF, TFR, netto, ratei ferie/permessi. Se hai le CUD, le incrocia con i cedolini per trovare discrepanze.
 
 ## Plugin disponibili
 
