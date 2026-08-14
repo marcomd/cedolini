@@ -2,6 +2,7 @@
 input/
 output/
 logs/
+tmp/
 
 # OS
 .DS_Store
@@ -17,3 +18,9 @@ __pycache__/
 .tool-versions
 
 CLAUDE.md
+
+# helper batch
+*.bat
+
+# vscode
+.vscode

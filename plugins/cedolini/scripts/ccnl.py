@@ -68,6 +68,7 @@ def detect_ccnl(cedolino: Cedolino, configs: dict[str, CCNLConfig]) -> CCNLConfi
 
     text_fields = [
         cedolino.contratto,
+        cedolino.qualifica,
         cedolino.ragione_sociale,
     ]
 
