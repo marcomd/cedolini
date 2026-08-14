@@ -14,7 +14,8 @@ def validate_net_pay(cedolini: list[Cedolino]) -> list[ValidationResult]:
         netto = ced.totali.netto_in_busta
 
         if not netto or netto == ZERO:
-            continue
+            # continue
+            raise Exception(f"Netto in busta non calcolato per cedolino \"{ced.file_path}\"")
 
         if ced.formato == "sistemi":
             # Sistemi: arr_preced is recovered (subtracted), arr_attuale is added
