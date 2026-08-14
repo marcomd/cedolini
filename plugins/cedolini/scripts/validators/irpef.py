@@ -25,10 +25,20 @@ SCAGLIONI_2022 = [
 # 2023: same as 2022
 SCAGLIONI_2023 = SCAGLIONI_2022
 
-# 2024+: 3 brackets
+# 2024: 3 brackets
 SCAGLIONI_2024 = [
     (Decimal("28000"), Decimal("0.23")),
     (Decimal("50000"), Decimal("0.35")),
+    (Decimal("999999999"), Decimal("0.43")),
+]
+
+# 2025: same as 2024
+SCAGLIONI_2025 = SCAGLIONI_2024
+
+# 2026+: 3 brackets
+SCAGLIONI_2026 = [
+    (Decimal("28000"), Decimal("0.23")),
+    (Decimal("50000"), Decimal("0.33")),
     (Decimal("999999999"), Decimal("0.43")),
 ]
 
@@ -41,7 +51,11 @@ def _get_scaglioni(anno: int):
         return SCAGLIONI_2022
     if anno == 2023:
         return SCAGLIONI_2023
-    return SCAGLIONI_2024
+    if anno == 2024:
+            return SCAGLIONI_2024
+    if anno == 2025:
+            return SCAGLIONI_2025
+    return SCAGLIONI_2026
 
 
 def _calcola_irpef(imponibile: Decimal, anno: int) -> Decimal:
