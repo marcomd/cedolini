@@ -76,16 +76,14 @@ def validate_tfr(cedolini: list[Cedolino]) -> list[ValidationResult]:
                 formula=f"{retrib_utile} * 0.005 = {reference_agg} (riferimento; calcolo effettivo su base giornaliera)",
             ))
         else:
-            # New layout: only the net "Quota T.F.R." is shown (contr. agg.
-            # is not broken out separately).  tfr_mese is the net quota, i.e.
-            # quota_lorda minus the contributo aggiuntivo.
-            # We check that the implied contr. agg. is reasonable (~0.5% of retrib).
+            # New layout: only the net "Quota T.F.R." is shown (contr. agg. is not broken out separately).
+            # tfr_mese is the net quota, i.e. quota_lorda minus the contributo aggiuntivo.
+            # We check that the implied_contr is reasonable (~0.5% of inps quota).
             implied_contr = quota_lorda - tfr_mese
-            reference_agg = (retrib_utile * Decimal("0.005")).quantize(
-                Decimal("0.01"), rounding=ROUND_HALF_UP
-            )
+            contributo_ivs = ced.inps.imponibile_contributivo_mese
+            reference_agg = (contributo_ivs * Decimal("0.005")).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
             diff = abs(implied_contr - reference_agg)
-            tolerance = Decimal("1.50")
+            tolerance = Decimal("0.01")
 
             results.append(ValidationResult(
                 nome="Quota TFR mensile",
