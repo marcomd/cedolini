@@ -417,7 +417,8 @@ def _parse_voci(ced: Cedolino, lines: list[dict], is_continuation: bool = False)
             wtext = w["text"]
             m = RE_VOCE_CODE.match(wtext)
             if m:
-                voce = _parse_voce_line(m.group(1), wtext[len(m.group(1)):], text, words, w)
+                code = m.group(1)
+                voce = _parse_voce_line(code, wtext[len(code):], text, words, w)
                 if voce:
                     # Check for duplicates
                     is_dup = False
@@ -463,7 +464,7 @@ def _parse_voce_line(code: str, desc_start: str, full_text: str,
     has_unit = re.search(r'(\d[\d.]*,\d+)(GG|ORE)', rest)
 
     # Contribution codes
-    contrib_codes = {"Z00000", "Z00055", "Z00087", "Z20000", "Z20003", "Z31000"}
+    contrib_codes = {"Z00000", "Z00055", "Z00071", "Z20000", "Z20003", "Z31000"}
 
     if code in contrib_codes:
         # Format: imponibile pct% amount
@@ -725,7 +726,7 @@ def _extract_fiscal_data(ced: Cedolino):
             _add_contribution(ced, "IVS", v)
         elif code == "Z00055":
             _add_contribution(ced, "FIS", v)
-        elif code == "Z00087":
+        elif code == "Z00071":
             _add_contribution(ced, "CIGS", v)
         elif code == "Z31000":
             _add_contribution(ced, "EST", v)
@@ -748,6 +749,8 @@ def _extract_fiscal_data(ced: Cedolino):
             ced.irpef.imponibile_fiscale_mese = v.competenze
         elif code == "F02010":  # IRPEF lorda
             ced.irpef.irpef_lorda_mese = v.competenze
+        elif code =="F02500": # Detrazioni lav. dip.
+            ced.irpef.detrazione_lavoro_dip = v.competenze
         elif code == "F03020":  # Ritenute IRPEF
             ced.irpef.irpef_netta_mese = v.trattenute
             ced.irpef.irpef_piu_imp_sost = v.trattenute
