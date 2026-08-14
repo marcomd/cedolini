@@ -630,19 +630,23 @@ def _parse_ratei(ced: Cedolino, lines: list[dict], full_text: str):
         if "COMUNICAZIONI" in text or "NETTOsDELsMESE" in text or "NETTO" in text:
             break
 
-        # Parse ratei lines: "Ferie 58,67000 146,66666 144,00000 61,33666 ORE"
+        # Parse ratei lines: 
+        #   "Ferie 58,67000 146,66666 144,00000 61,33666 ORE"
+        #   "Ferie 120,00000 116,00000 4,00000 21,33333 ORE TOTALEsTRATTENUTE 2.638,56"
         ratei_match = re.match(
-            r'(Ferie|Perm\.Ex-Fs|Perm\.R\.O\.L|Permessi|Perm\.ROL)\s+'
-            r'([\d.,]+)\s+([\d.,]+)\s+([\d.,]+)\s+([\d.,]+)\s+(ORE)?',
+            r'(?P<tipo>Ferie|Perm\.Ex-Fs|Perm\.R\.O\.L|Permessi|Perm\.ROL)\s+'
+            r'(?P<maturato>[\d.,]+)\s+(?P<goduto>[\d.,]+)\s+(?P<residuo>[\d.,]+)\s+(?P<residuo_ap>[\d.,]+)\s+(ORE)?',
             text
         )
         if ratei_match:
+            residuo = _pdn(ratei_match.group("residuo"))
+            residuo_ap = _pdn(ratei_match.group("residuo_ap"))
             ced.ratei.append(RateiRow(
-                tipo=ratei_match.group(1),
-                residuo_ap=_pdn(ratei_match.group(2)),
-                maturato=_pdn(ratei_match.group(3)),
-                goduto=_pdn(ratei_match.group(4)),
-                saldo=_pdn(ratei_match.group(5)),
+                tipo=ratei_match.group("tipo"),
+                residuo_ap=residuo_ap,
+                maturato=_pdn(ratei_match.group("maturato")),
+                goduto=_pdn(ratei_match.group("goduto")),
+                saldo=(residuo+residuo_ap), # it's not present in zucchetti2, calc to avoid change model
             ))
             continue
 
@@ -686,7 +690,7 @@ def _parse_totali(ced: Cedolino, lines: list[dict], full_text: str):
 
         # Net amount: "2.729,00€" or just amount after NETTO line
         if "€" in text:
-            m = re.search(r'([\d.,]+)€', text)
+            m = re.search(r'([\d.,\s]+)€', text)
             if m:
                 ced.totali.netto_in_busta = _pdn(m.group(1))
 

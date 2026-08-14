@@ -7,9 +7,9 @@ disclaimer: |
   rivolgersi al proprio consulente del lavoro.
 
 intro: |
-  **Competenze** = voci positive (stipendio, straordinari, permessi retribuiti, ecc.)
-  **Trattenute** = voci negative (contributi INPS, IRPEF, addizionali, ecc.)
-  **Netto in busta** = competenze - trattenute + arrotondamento
+  **Competenze** = voci positive (stipendio, straordinari, permessi retribuiti, ecc.)  
+  **Trattenute** = voci negative (contributi INPS, IRPEF, addizionali, ecc.)  
+  **Netto in busta** = competenze - trattenute + arrotondamento  
 
   Ogni controllo puo' avere tre esiti:
   - **PASS**: il calcolo e' coerente con i dati del cedolino
